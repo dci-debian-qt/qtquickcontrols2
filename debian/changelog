@@ -1,5 +1,15 @@
+qtquickcontrols2-opensource-src (5.7.0-0) xenial; urgency=medium
+
+  * New upstream version
+
+ -- Harald Sitter <sitter@kde.org>  Fri, 02 Sep 2016 14:16:28 +0200
+
 qtquickcontrols2-opensource-src (5.6.0~beta-1) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
   * Initial release (closes: #697509).
+
+  [ Harald Sitter ]
+  * -
 
  -- Dmitry Shachnev <mitya57@debian.org>  Sat, 09 Jan 2016 23:30:29 +0300
