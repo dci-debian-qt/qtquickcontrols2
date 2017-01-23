@@ -21,10 +21,22 @@ override_dh_auto_install-arch:
 	dh_auto_install
 
 	# Remove private headers and the .pri files
-	rm -rfv debian/tmp/usr/include/$(DEB_HOST_MULTIARCH)/qt5/*/*/*/private/
+	rm -rfv debian/tmp/usr/include/$(DEB_HOST_MULTIARCH)/qt5/QtQuickControls2/5.*
+	rm -rfv debian/tmp/usr/include/$(DEB_HOST_MULTIARCH)/qt5/QtQuickTemplates2/5.*
 	rm -fv debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/mkspecs/modules/*_private.pri
+
+	# Remove .la files
+	rm -fv debian/tmp/usr/lib/*/libQt5QuickControls2.la
+	rm -fv debian/tmp/usr/lib/*/libQt5QuickTemplates2.la
 
 override_dh_install:
 	dh_install --fail-missing
+
+override_dh_auto_test-arch:
+	$(MAKE) install -Csrc/imports INSTALL_ROOT=$(CURDIR)/test_root
+	-xvfb-run -a -s "-screen 0 1024x768x24 +extension RANDR +extension RENDER +extension GLX" \
+		dh_auto_test --no-parallel -- -Ctests/auto -k \
+		LD_LIBRARY_PATH=$(CURDIR)/lib \
+		QML2_IMPORT_PATH=$(CURDIR)/test_root/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/qml
 
 override_dh_auto_test-indep:
