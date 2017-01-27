@@ -103,17 +103,6 @@ Description: Qt 5 Quick Controls 2 documentation
  .
  This package contains the Qt Quick Controls 2 documentation in qch format.
 
-Package: qtquickcontrols2-5-examples
-Priority: extra
-Architecture: all
-Section: doc
-Depends: ${misc:Depends}
-Description: Qt 5 Quick Controls 2 documentation examples
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This package contains the Qt Quick Controls 2 documentation examples.
-
 Package: qtquickcontrols2-5-doc-html
 Priority: extra
 Architecture: all
