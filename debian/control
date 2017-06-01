@@ -10,18 +10,18 @@ Uploaders: Sune Vuorela <debian@pusling.com>,
 Build-Depends: debhelper (>= 9),
                dpkg-dev (>= 1.16.1),
                pkg-kde-tools,
-               qml-module-qtgraphicaleffects (>= 5.7.1~),
-               qml-module-qtquick-layouts (>= 5.7.1~),
-               qml-module-qtquick-window2 (>= 5.7.1~),
-               qml-module-qttest (>= 5.7.1~),
-               qtbase5-private-dev (>= 5.7.1+dfsg~),
-               qtdeclarative5-private-dev (>= 5.7.1~),
+               qml-module-qtgraphicaleffects (>= 5.9.0~),
+               qml-module-qtquick-layouts (>= 5.9.0~),
+               qml-module-qtquick-window2 (>= 5.9.0~),
+               qml-module-qttest (>= 5.9.0~),
+               qtbase5-private-dev (>= 5.9.0~beta.3+dfsg~),
+               qtdeclarative5-private-dev (>= 5.9.0~),
                xauth,
                xvfb
-Build-Depends-Indep: libqt5sql5-sqlite (>= 5.7.1+dfsg~),
-                     qtbase5-doc-html (>= 5.7.1+dfsg~),
-                     qtdeclarative5-doc-html (>= 5.7.1~),
-                     qttools5-dev-tools (>= 5.7.1~)
+Build-Depends-Indep: libqt5sql5-sqlite (>= 5.9.0~beta.3+dfsg~),
+                     qtbase5-doc-html (>= 5.9.0~beta.3+dfsg~),
+                     qtdeclarative5-doc-html (>= 5.9.0~),
+                     qttools5-dev-tools (>= 5.9.0~)
 Standards-Version: 3.9.8
 Homepage: https://code.qt.io/cgit/qt/qtquickcontrols2.git
 Vcs-Git: https://anonscm.debian.org/git/pkg-kde/qt/qtquickcontrols2.git
@@ -57,6 +57,18 @@ Description: Qt 5 qt.labs.calendar QML module
  .
  This package contains the QML qt.labs.calendar module, which is part of
  Qt Quick Controls 2.
+
+Package: qml-module-qt-labs-platform
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qt 5 qt.labs.platform QML module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the experimental Qt Labs Platform module that provides
+ platform integration: native dialogs, menus and menu bars, and tray icons.
+ It falls back to Qt Widgets when a native implementation is not available.
 
 Package: qml-module-qtquick-controls2
 Architecture: any
