@@ -20,10 +20,10 @@ Build-Depends: debhelper (>= 9),
                qtdeclarative5-private-dev (>= 5.9.2~),
                xauth,
                xvfb
-Build-Depends-Indep: libqt5sql5-sqlite (>= 5.9.2+dfsg~),
-                     qtbase5-doc-html (>= 5.9.2+dfsg~),
-                     qtdeclarative5-doc-html (>= 5.9.2~),
-                     qttools5-dev-tools (>= 5.9.2~)
+Build-Depends-Indep: libqt5sql5-sqlite (>= 5.9.3+dfsg),
+                     qtbase5-doc-html (>= 5.9.3+dfsg),
+                     qtdeclarative5-doc-html (>= 5.9.3),
+                     qttools5-dev-tools (>= 5.9.3)
 Standards-Version: 4.1.1
 Homepage: https://code.qt.io/cgit/qt/qtquickcontrols2.git
 Vcs-Git: https://anonscm.debian.org/git/pkg-kde/qt/qtquickcontrols2.git
@@ -139,3 +139,4 @@ Description: Qt 5 Qt Quick Templates 2 examples
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains the examples for Qt Quick Controls 2.
+
