@@ -13,12 +13,20 @@ qtquickcontrols2-opensource-src (5.9.2-2) unstable; urgency=medium
 
 qtquickcontrols2-opensource-src (5.9.2-1) experimental; urgency=medium
 
+<<<<<<<
   * New upstream release.
   * Bump Qt build-dependencies to 5.9.2.
   * Use dh_qmlcdeps to get proper dependencies for .qmlc files.
   * Update symbols files from the current build log.
   * Use debhelper compat level 10 and dh_missing.
   * Bump Standards-Version to 4.1.1, stop using deprecated Priority: extra.
+=======
+  [ Dmitry Shachnev ]
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.9.2.
+  * Use dh_qmlcdeps to get proper dependencies for .qmlc files.
+  * Update symbols files from the current build log.
+>>>>>>>
 
  -- Dmitry Shachnev <mitya57@debian.org>  Mon, 16 Oct 2017 13:01:06 +0300
 
