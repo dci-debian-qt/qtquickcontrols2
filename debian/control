@@ -8,23 +8,23 @@ Uploaders: Sune Vuorela <debian@pusling.com>,
            Timo Jyrinki <timo@debian.org>,
            Dmitry Shachnev <mitya57@debian.org>,
            Simon Quigley <tsimonq2@ubuntu.com>
-Build-Depends: debhelper (>= 9),
+Build-Depends: debhelper (>= 10.3),
                dpkg-dev (>= 1.16.1),
-               pkg-kde-tools,
-               qml-module-qtgraphicaleffects (>= 5.9.1~),
-               qml-module-qtquick-layouts (>= 5.9.1~),
-               qml-module-qtquick-window2 (>= 5.9.1~),
-               qml-module-qttest (>= 5.9.1~),
-               qtbase5-private-dev (>= 5.9.1+dfsg~),
-               qtdeclarative5-dev-tools (>= 5.9.1~),
-               qtdeclarative5-private-dev (>= 5.9.1~),
+               pkg-kde-tools (>= 0.15.26~),
+               qml-module-qtgraphicaleffects (>= 5.9.2~),
+               qml-module-qtquick-layouts (>= 5.9.2~),
+               qml-module-qtquick-window2 (>= 5.9.2~),
+               qml-module-qttest (>= 5.9.2~),
+               qtbase5-private-dev (>= 5.9.2+dfsg~),
+               qtdeclarative5-dev-tools (>= 5.9.2~),
+               qtdeclarative5-private-dev (>= 5.9.2~),
                xauth,
                xvfb
-Build-Depends-Indep: libqt5sql5-sqlite (>= 5.9.1+dfsg~),
-                     qtbase5-doc-html (>= 5.9.1+dfsg~),
-                     qtdeclarative5-doc-html (>= 5.9.1~),
-                     qttools5-dev-tools (>= 5.9.1~)
-Standards-Version: 4.0.0
+Build-Depends-Indep: libqt5sql5-sqlite (>= 5.9.2+dfsg~),
+                     qtbase5-doc-html (>= 5.9.2+dfsg~),
+                     qtdeclarative5-doc-html (>= 5.9.2~),
+                     qttools5-dev-tools (>= 5.9.2~)
+Standards-Version: 4.1.1
 Homepage: https://code.qt.io/cgit/qt/qtquickcontrols2.git
 Vcs-Git: https://anonscm.debian.org/git/pkg-kde/qt/qtquickcontrols2.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-kde/qt/qtquickcontrols2.git
@@ -52,7 +52,7 @@ Description: Qt 5 Quick Templates 2 library
 Package: qml-module-qt-labs-calendar
 Architecture: any
 Multi-Arch: same
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${qmlc:Depends}, ${shlibs:Depends}
 Description: Qt 5 qt.labs.calendar QML module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -75,7 +75,10 @@ Description: Qt 5 qt.labs.platform QML module
 Package: qml-module-qtquick-controls2
 Architecture: any
 Multi-Arch: same
-Depends: qml-module-qtquick-templates2, ${misc:Depends}, ${shlibs:Depends}
+Depends: qml-module-qtquick-templates2,
+         ${misc:Depends},
+         ${qmlc:Depends},
+         ${shlibs:Depends}
 Description: Qt 5 Qt Quick Controls 2 QML module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -106,7 +109,6 @@ Description: Qt 5 Quick Controls 2 development files
  This package contains the Qt Quick Controls 2 development files.
 
 Package: qtquickcontrols2-5-doc
-Priority: extra
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
@@ -118,7 +120,6 @@ Description: Qt 5 Quick Controls 2 documentation
  This package contains the Qt Quick Controls 2 documentation in qch format.
 
 Package: qtquickcontrols2-5-doc-html
-Priority: extra
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
