@@ -3,6 +3,7 @@ qtquickcontrols2-opensource-src (5.10.1-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * New upstream release.
   * Update debian/watch for the new upstream tarball names.
+  * Bump Qt build-dependencies to 5.10.1.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 06 Mar 2018 14:45:15 +0300
 
