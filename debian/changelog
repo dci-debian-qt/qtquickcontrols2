@@ -1,6 +1,6 @@
-qtquickcontrols2-opensource-src (5.11.0-0neon) xenial; urgency=medium
+qtquickcontrols2-opensource-src (5.11.1-0neon) xenial; urgency=medium
 
-  * Release 5.11 to neon
+  * Release 5.11.1 to neon
 
  -- Bhushan Shah <bshah@kde.org>  Tue, 29 May 2018 07:45:38 +0000
 
