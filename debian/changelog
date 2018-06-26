@@ -5,6 +5,7 @@ qtquickcontrols2-opensource-src (5.11.1-1) UNRELEASED; urgency=medium
   * Bump Standards-version to 4.1.4, no changes needed.
   * Bump debhelper compat to 11, no changes needed.
   * Bump build dependencies to 5.11.1.
+  * Update symbols from amd64 build logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 25 Jun 2018 23:13:10 -0500
 
