@@ -1,7 +1,8 @@
-# SymbolsHelper-Confirmed: 5.10.1 amd64
+# SymbolsHelper-Confirmed: 5.11.1 amd64
 libQt5QuickControls2.so.5 libqt5quickcontrols2-5 #MINVER#
  Qt_5.0@Qt_5.0 5.7.1
  Qt_5.10@Qt_5.10 5.10.1
+ Qt_5.11@Qt_5.11 5.11.1
  Qt_5.1@Qt_5.1 5.7.1
  Qt_5.2@Qt_5.2 5.7.1
  Qt_5.3@Qt_5.3 5.7.1
@@ -231,8 +232,6 @@ libQt5QuickControls2.so.5 libqt5quickcontrols2-5 #MINVER#
  _ZN22QQuickIconImagePrivate10updateIconEv@Qt_5_PRIVATE_API 5.10.1
  _ZN22QQuickIconImagePrivate14updateFillModeEv@Qt_5_PRIVATE_API 5.10.1
  _ZN22QQuickIconImagePrivate22updateDevicePixelRatioEd@Qt_5_PRIVATE_API 5.10.1
- _ZN22QQuickIconImagePrivateC1Ev@Qt_5_PRIVATE_API 5.10.1
- _ZN22QQuickIconImagePrivateC2Ev@Qt_5_PRIVATE_API 5.10.1
  _ZNK11QQuickColor10metaObjectEv@Qt_5_PRIVATE_API 5.10.1
  _ZNK11QQuickColor11transparentERK6QColord@Qt_5_PRIVATE_API 5.10.1
  _ZNK11QQuickColor5blendERK6QColorS2_d@Qt_5_PRIVATE_API 5.10.1
