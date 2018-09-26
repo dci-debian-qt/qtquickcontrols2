@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.11.1 amd64
+# SymbolsHelper-Confirmed: 5.11.2 amd64
 libQt5QuickTemplates2.so.5 libqt5quicktemplates2-5 #MINVER#
  Qt_5_PRIVATE_API@Qt_5_PRIVATE_API 5.6.0~beta
  _ZN10QQuickDial10setPressedEb@Qt_5_PRIVATE_API 5.6.0~beta
@@ -1476,10 +1476,12 @@ libQt5QuickTemplates2.so.5 libqt5quicktemplates2-5 #MINVER#
  _ZN20QQuickTabBarAttached16staticMetaObjectE@Qt_5_PRIVATE_API 5.10.1
  _ZN20QQuickTabBarAttachedC1EP7QObject@Qt_5_PRIVATE_API 5.10.1
  _ZN20QQuickTabBarAttachedC2EP7QObject@Qt_5_PRIVATE_API 5.10.1
- _ZN20QQuickTumblerPrivate10unlockWrapEv@Qt_5_PRIVATE_API 5.9.0~rc
+ _ZN20QQuickTumblerPrivate11endSetModelEv@Qt_5_PRIVATE_API 5.11.2
+ _ZN20QQuickTumblerPrivate13beginSetModelEv@Qt_5_PRIVATE_API 5.11.2
  _ZN20QQuickTumblerPrivate13resetViewDataEv@Qt_5_PRIVATE_API 5.9.0~rc
  _ZN20QQuickTumblerPrivate13setupViewDataEP10QQuickItem@Qt_5_PRIVATE_API 5.9.0~rc
  _ZN20QQuickTumblerPrivate14itemChildAddedEP10QQuickItemS1_@Qt_5_PRIVATE_API 5.9.0~rc
+ _ZN20QQuickTumblerPrivate15setCurrentIndexEiNS_20PropertyChangeReasonE@Qt_5_PRIVATE_API 5.11.2
  _ZN20QQuickTumblerPrivate16itemChildRemovedEP10QQuickItemS1_@Qt_5_PRIVATE_API 5.9.0~rc
  _ZN20QQuickTumblerPrivate16syncCurrentIndexEv@Qt_5_PRIVATE_API 5.9.0~rc
  _ZN20QQuickTumblerPrivate17determineViewTypeEP10QQuickItem@Qt_5_PRIVATE_API 5.9.0~rc
@@ -1491,11 +1493,11 @@ libQt5QuickTemplates2.so.5 libqt5quicktemplates2-5 #MINVER#
  _ZN20QQuickTumblerPrivate21_q_onViewCountChangedEv@Qt_5_PRIVATE_API 5.9.0~rc
  _ZN20QQuickTumblerPrivate22_q_onViewOffsetChangedEv@Qt_5_PRIVATE_API 5.10.1
  _ZN20QQuickTumblerPrivate22calculateDisplacementsEv@Qt_5_PRIVATE_API 5.10.1
+ _ZN20QQuickTumblerPrivate22setPendingCurrentIndexEi@Qt_5_PRIVATE_API 5.11.2
  _ZN20QQuickTumblerPrivate24_q_onViewContentYChangedEv@Qt_5_PRIVATE_API 5.10.1
  _ZN20QQuickTumblerPrivate28_q_onViewCurrentIndexChangedEv@Qt_5_PRIVATE_API 5.9.0~rc
  _ZN20QQuickTumblerPrivate3getEP13QQuickTumbler@Qt_5_PRIVATE_API 5.9.0~rc
  _ZN20QQuickTumblerPrivate7setWrapEbb@Qt_5_PRIVATE_API 5.9.0~rc
- _ZN20QQuickTumblerPrivate8lockWrapEv@Qt_5_PRIVATE_API 5.9.0~rc
  _ZN20QQuickTumblerPrivate8setCountEi@Qt_5_PRIVATE_API 5.9.0~rc
  _ZN21QQuickDialogButtonBox11itemRemovedEiP10QQuickItem@Qt_5_PRIVATE_API 5.9.0~rc
  _ZN21QQuickDialogButtonBox11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5_PRIVATE_API 5.9.0~rc
