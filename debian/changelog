@@ -5,6 +5,7 @@ qtquickcontrols2-opensource-src (5.11.2-1) UNRELEASED; urgency=medium
   * Bump Qt build-dependencies to 5.11.2.
   * Update debian/copyright.
   * Update libqt5quicktemplates2-5.symbols from the current build log.
+  * Bump Standards-Version to 4.2.1, no changes needed.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 25 Sep 2018 18:37:38 +0300
 
